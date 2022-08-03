@@ -1,0 +1,15 @@
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.csproj.AssemblyReference.cache
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.AssemblyInfoInputs.cache
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.AssemblyInfo.cs
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.csproj.CoreCompileInputs.cache
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\bin\Debug\net6.0\ZadanieDomowe.exe
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\bin\Debug\net6.0\ZadanieDomowe.deps.json
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\bin\Debug\net6.0\ZadanieDomowe.runtimeconfig.json
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\bin\Debug\net6.0\ZadanieDomowe.dll
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\bin\Debug\net6.0\ZadanieDomowe.pdb
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.dll
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\refint\ZadanieDomowe.dll
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.pdb
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ZadanieDomowe.genruntimeconfig.cache
+D:\Programowanie\Szkoła DotNETa\Tydzień2\ZadanieDomowe\ZadanieDomowe\obj\Debug\net6.0\ref\ZadanieDomowe.dll
