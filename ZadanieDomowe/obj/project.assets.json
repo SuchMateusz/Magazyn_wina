@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "MagazynWina.App/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MagazynWina.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MagazynWina.App.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MagazynWina.App.dll": {}
+        }
+      },
+      "MagazynWina.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MagazynWina.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MagazynWina.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MagazynWina.App/1.0.0": {
+      "type": "project",
+      "path": "../MagazynWina.App/MagazynWina.App.csproj",
+      "msbuildProject": "../MagazynWina.App/MagazynWina.App.csproj"
+    },
+    "MagazynWina.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MagazynWina.Domain/MagazynWina.Domain.csproj",
+      "msbuildProject": "../MagazynWina.Domain/MagazynWina.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "MagazynWina.App >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Mateusz\\.nuget\\packages\\": {},
@@ -14,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień2\\ZadanieDomowe\\ZadanieDomowe\\ZadanieDomowe.csproj",
-      "projectName": "ZadanieDomowe",
-      "projectPath": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień2\\ZadanieDomowe\\ZadanieDomowe\\ZadanieDomowe.csproj",
+      "projectUniqueName": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień3\\ZadanieDomowe\\ZadanieDomowe\\MagazynWina.csproj",
+      "projectName": "MagazynWina",
+      "projectPath": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień3\\ZadanieDomowe\\ZadanieDomowe\\MagazynWina.csproj",
       "packagesPath": "C:\\Users\\Mateusz\\.nuget\\packages\\",
-      "outputPath": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień2\\ZadanieDomowe\\ZadanieDomowe\\obj\\",
+      "outputPath": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień3\\ZadanieDomowe\\ZadanieDomowe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,7 +75,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Programowanie\\Szkoła DotNETa\\Tydzień3\\ZadanieDomowe\\MagazynWina.App\\MagazynWina.App.csproj": {
+              "projectPath": "D:\\Programowanie\\Szkoła DotNETa\\Tydzień3\\ZadanieDomowe\\MagazynWina.App\\MagazynWina.App.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -56,7 +97,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +107,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

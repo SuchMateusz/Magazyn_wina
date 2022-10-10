@@ -1,4 +1,10 @@
-﻿using System;
+﻿using MagazynWina.App;
+using MagazynWina.App.AbstractInteface;
+using MagazynWina.App.Concrete;
+using MagazynWina.App.Manager;
+using MagazynWina.Domain;
+using MagazynWina.Domain.Model;
+using System;
 
 namespace MagazynWina
 {
@@ -7,8 +13,9 @@ namespace MagazynWina
         static void Main(string[] args)
         {
             MenuActionService actionService = new MenuActionService();
-            actionService = Initialize(actionService);
             WineService wineService = new WineService();
+            WineAppControl wineAppControl = new WineAppControl(actionService, wineService);
+
             Console.WriteLine("Welcom in my app");
 
             while (true)
@@ -28,28 +35,30 @@ namespace MagazynWina
                 switch (operation.KeyChar)
                 {
                     case '1':
-                        var keyInfo = wineService.AddNewWineView(actionService);
-                        var addId = wineService.AddNewWine(keyInfo.KeyChar);
+
+                       var newId = wineAppControl.AddNewWine();
+
                         break;
 
                     case '2':
-                        var removeId = wineService.RemoveWineView();
-                        wineService.RemoveWine(removeId);
+                        
+                        wineAppControl.GetAllWines();
+                        wineAppControl.DeleteWine();
                         break;
 
                     case '3':
-                        var detailWineId = wineService.selectionWineDetail();
-                        wineService.wineDetail(detailWineId);
+                        var allWines = wineAppControl.GetAllWines();
                         break;
-
                     case '4':
-                        var selectedTypeWine = wineService.selectionTypeWineDetail();
-                        wineService.selectedTypeWinesDetail(selectedTypeWine);
+                        wineAppControl.wineDetail();
                         break;
-
 
                     case '5':
-                        wineService.SugarAdd();
+                        wineAppControl.UpdateWine();
+                        break;
+
+                    case '6':
+                        wineAppControl.SugarAdd();
                         break;
 
                     default:
@@ -58,19 +67,6 @@ namespace MagazynWina
                 }    
             }
         }
-        private static MenuActionService Initialize(MenuActionService actionService)
-        {
-            actionService.AddNewAction(1, "Add new wine", "Main");
-            actionService.AddNewAction(2, "Remove wine", "Main");
-            actionService.AddNewAction(3, "Show details wine", "Main");
-            actionService.AddNewAction(4, "List of wine", "Main");
-            actionService.AddNewAction(5, "How much sugar add for starting producing wine", "Main");
-            actionService.AddNewAction(7, "Exit Program", "Main");
 
-            actionService.AddNewAction(1, "Sweet", "AddNewWineMenu");
-            actionService.AddNewAction(2, "Half sweet", "AddNewWineMenu");
-            actionService.AddNewAction(3, "Dry", "AddNewWineMenu");
-            return actionService;
-        }
     }
 }

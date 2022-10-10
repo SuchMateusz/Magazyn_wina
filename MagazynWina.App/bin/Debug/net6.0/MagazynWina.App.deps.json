@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MagazynWina.App/1.0.0": {
+        "dependencies": {
+          "MagazynWina.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MagazynWina.App.dll": {}
+        }
+      },
+      "MagazynWina.Domain/1.0.0": {
+        "runtime": {
+          "MagazynWina.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MagazynWina.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MagazynWina.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
